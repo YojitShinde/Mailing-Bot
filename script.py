@@ -8,6 +8,7 @@ with open('emails.csv') as file:
     reader_obj = csv.DictReader(file)
     for obj in reader_obj:
         receiver_email = obj['email']
+        print(receiver_email)
 
         sender_mail = ''
         sender_password = ''
